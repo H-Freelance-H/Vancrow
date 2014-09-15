@@ -1,0 +1,113 @@
+@include keyframes(blink) {
+    0% {
+        -webkit-transform: scale(1.1,1.2);
+        transform: scale(1.1,1.2);
+    }
+    2% {
+        -webkit-transform: scale(1,0);
+        transform: scale(1,0);
+    }
+    4% {
+        -webkit-transform: scale(1,0);
+        transform: scale(1,0);
+    }
+    5% {
+        -webkit-transform: scale(1.1,1.2);
+        transform: scale(1.1,1.2);
+    }
+    100% {
+        -webkit-transform: scale(1.1,1.2);
+        transform: scale(1.1,1.2);
+    }
+}
+
+
+@include keyframes(mask) {
+    from{-webkit-mask-position:0px 0px;
+    }
+    to{-webkit-mask-position:0px -48px;
+    }
+}
+@include keyframes(ai-equip) {
+    from{
+        top: 69px;
+        
+    }
+    50%{
+        top: 109px;
+        
+    }
+    to{
+        top: 69px;
+        
+    }
+}
+
+@include keyframes(skill-ai) {
+
+    from{
+        height: 275px;
+        
+    }
+    50%{
+        height: 278px;
+        
+    }
+    to{
+        height: 275px;
+        
+    }
+
+}
+@include keyframes(skill-me) {
+    from{
+        height: 320px;
+        
+    }
+    50%{
+        height: 323px;
+        
+    }
+    to{
+        height: 320px;
+        
+    }
+}
+@include keyframes(skill-js) {
+    from{
+        height: 205px;
+        
+    }
+    50%{
+        height: 208px;
+        
+    }
+    to{
+        height: 205px;
+        
+    }
+}
+
+@include keyframes(js-arm) {
+    from{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);
+        
+    }
+    50%{
+        -webkit-transform: rotate(-40deg);
+        -ms-transform: rotate(-40deg);
+        -o-transform: rotate(-40deg);
+        transform: rotate(-40deg);      
+    }
+    to{
+        -webkit-transform: rotate(0deg);
+        -ms-transform: rotate(0deg);
+        -o-transform: rotate(0deg);
+        transform: rotate(0deg);        
+    }
+
+}
+

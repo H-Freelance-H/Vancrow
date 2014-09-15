@@ -1,0 +1,48 @@
+.form-contact{
+	margin-top: 50px;
+	padding: 23px 21px 35px;
+	text-align: center;
+	border: 18px solid #404141;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+	border-radius: 10px;
+}
+.form-l-group{
+	.form-control{
+		margin-bottom: 20px;
+	}
+	& > *:last-child{
+		.form-control{
+			margin-bottom: 0;
+		}
+	}	
+}
+#form-messages{
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 36px;
+    color: #fff;
+    font-size: 15px;
+}
+
+@media(min-width: $screen-sm){
+	.form-l-group{
+		.form-control{
+			margin-bottom: 0;
+		}
+		& > *:last-child{
+			.form-control{
+				margin-bottom: 0;
+			}
+		}	
+	}
+}
+@media(min-width: $screen-md){
+	.form-contact{
+		margin-top: 100px;
+		padding: 55px 50px;
+	}
+}
+

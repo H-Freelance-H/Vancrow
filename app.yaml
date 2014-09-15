@@ -1,0 +1,63 @@
+application: michaelivantogeno
+version: version1
+runtime: python27
+api_version: 1
+threadsafe: true
+
+libraries:
+- name: jinja2
+  version: "2.6"
+
+handlers:
+- url: /favicon.ico
+  static_files: frontend/favicon.ico
+  upload: frontend/favicon.ico
+
+- url: /(.*\.(ico))
+  static_files: frontend/images/\1
+  upload: frontend/images/(.*\.(ico))
+
+- url: /robots.txt
+  static_files: frontend/robots.txt
+  upload: frontend/robots.txt
+
+- url: /images
+  static_dir: frontend/images
+- url: /js
+  static_dir: frontend/js
+- url: /css
+  static_dir: frontend/css
+- url: /bower_components
+  static_dir: frontend/bower_components
+- url: /fonts
+  static_dir: frontend/fonts
+- url: /node_modules
+  static_dir: frontend/node_modules
+- url: /scripts
+  static_dir: frontend/scripts
+- url: /styles
+  static_dir: frontend/styles
+- url: /ico
+  static_dir: frontend/ico
+
+- url: /admin/.*
+  script: main.app
+  login: admin
+
+- url: /.*
+  script: main.app
+
+builtins:
+- deferred: on
+- remote_api: on
+- appstats: on
+
+inbound_services:
+- warmup
+
+
+error_handlers:
+- file: frontend/404.html
+
+- error_code: over_quota
+  file: frontend/over_quota.html

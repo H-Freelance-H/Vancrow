@@ -1,0 +1,58 @@
+
+.vcard{
+	width:263px;
+	padding: 0;
+	p,a,i {
+		display: inline-block;
+		margin-right: 15px;
+		color: #A2A0A0;
+		text-transform: uppercase;
+	}
+	p,a{
+		margin-top: 5px;
+		font-family: 'lato-light';
+		span{
+		font-family: 'lato-reg';
+		color: #fff;
+		}
+	}
+	li{
+		display: inline-block;
+		float: none;
+		padding: 0;
+		height: 20px;
+	}
+	.fa-envelope{
+		font-size: 18px;
+	}
+	.fa-mobile{
+		font-size: 24px;
+	}
+}
+
+@media(min-width: $screen-xs){
+	.vcard{
+		li{
+			padding: 0 17px;
+		}
+	}	
+}
+@media(min-width: $screen-sm){
+	.vcard{
+		width: auto;
+		li{
+			float: left;
+		}
+	}	
+}
+
+@media(min-width: $screen-md){
+	.vcard{
+		li{
+			padding: 0 70px;
+		}
+	}	
+}
+
+
+

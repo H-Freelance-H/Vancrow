@@ -1,0 +1,47 @@
+// typogragphy{
+.t-mega{
+	font-size: 20px;
+}
+
+.t1{
+	font-size: 38px;
+}
+.t2{
+	
+}
+.t3{
+
+}
+.t4{
+	font-size: 18px;
+	
+}
+.t5{
+	font-size: 17px;
+	
+}
+@media(min-width: $screen-md){
+	.t-mega{
+		font-size: 27px;
+	}
+}
+
+@media(min-width: $screen-tablet){
+	.t-mega{
+		font-size: 40px;
+
+		span{
+			font-size: 33px;
+		}
+
+	}
+}
+
+@media(min-width: $screen-xlg){
+	.t-mega{
+		font-size: 70px;
+		span{
+			font-size: 48px;
+		}
+	}
+}

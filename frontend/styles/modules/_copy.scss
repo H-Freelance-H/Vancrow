@@ -1,0 +1,112 @@
+
+.copy {
+    line-height: 1.6em;
+    // letter-spacing: 0.1em;
+    p {
+        margin: 0 0 1.5rem 0;       
+         
+    }
+
+    h1,h2, h3, h4, h5, h6 {
+        margin: 2rem 0 2rem 0;
+        line-height: 1.3em;
+        letter-spacing: 2px;
+        font-weight: bold;
+    }
+
+    h5, h6 {
+        text-transform: uppercase;
+      
+    }
+
+    ul {
+        list-style-type: disc;
+    }
+
+    ul li, ol li {
+        padding: 3px 0;
+    }
+    
+    ol {
+        list-style-type: decimal;
+    }
+
+    ul, ol, dl { 
+        margin: 0 0 22px 30px;
+    }
+
+    ul, ol {
+
+        list-style-position: inside;
+
+        ul, ol { 
+            margin-top: 0; 
+            margin-bottom: 0; 
+        }
+    }
+
+    ol ol li {
+        list-style-type: lower-latin;
+    }
+
+    img {
+      display: block;
+      @include box-sizing(border-box);
+    } 
+
+    blockquote {
+        float: left;      
+        margin-top: 1em;
+        margin-bottom: 2em;
+        padding: 18px 42px 0;
+
+        &.pullquote {}
+    }
+
+    blockquote.left {
+        width: 33%;
+        margin-left: 0; 
+        margin-right: 26px;
+    }
+
+    blockquote.right {
+        float: right;  
+        width: 33%;        
+        margin-left: 26px; 
+        margin-right: 0;        
+        text-align: left;
+    }
+
+
+    pre {     
+        padding: 0 20px;
+
+    }  
+    .t-mega{
+        // line-height: 1em;
+        line-height: 0.8em;
+    }   
+}
+
+.copy--condensed {
+
+    p {
+        margin: 0 0 0.8rem 0;
+    }
+}
+.copy-secondary{
+        h4{
+            font-family: 'lato-bold';
+            margin-bottom: 3px; 
+        }
+        h4+p{
+            font-family: 'lato-reg';           
+        }
+        h1{
+            margin-bottom: 20px;
+        }
+        h1+p{
+            margin-bottom: 35px;
+        }
+}
+

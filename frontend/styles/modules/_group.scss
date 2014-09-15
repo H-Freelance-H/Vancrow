@@ -1,0 +1,40 @@
+.group{
+	position: relative;
+	.group-title{
+		text-align: center;
+		margin-top: 70px;
+		margin-bottom: 70px;
+	}
+}
+.group-intro{
+	text-align: center;
+
+}
+.group-1{
+	padding-top: 40px;
+	padding-bottom: 40px;	
+	background: #fff;
+}
+.group-2{
+	padding-bottom: 0;
+}
+.group-3{
+	padding-bottom: 220px;
+}
+
+
+@media(min-width: $screen-md){
+	.group-intro{
+		text-align: left;
+		margin-top: 350px;
+	}
+	.group-1{
+		padding-top: 127px;
+		padding-bottom: 121px;
+	}	
+}
+
+
+
+
+

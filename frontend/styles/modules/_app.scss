@@ -1,0 +1,51 @@
+textarea {
+   resize: none;
+}
+ul{
+	list-style: none;
+}
+.container-narrow{
+	padding: 0 250px;
+}
+.container-fluid-l{
+	padding: 0 15px;
+}
+.container-change{
+	padding: 0;
+}
+.container-inner{
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 100px;
+}
+.map-container{
+	height: 200px;
+}
+.l-header{
+	@include clearfix();
+	width: 100%;
+	background: #fff;
+	padding: 20px 0;
+	height: 79px;
+}
+
+.l-footer{
+	padding: 30px 15px 30px;
+	clear: both;
+}
+@media(min-width: $screen-xs){
+	.l-footer{
+		padding: 30px 15px 15px;
+	}
+	.container-fluid-l{
+		padding: 0 35px;
+	}
+
+}
+@media(min-width: $screen-sm){
+	.container-change{
+		padding: 0 15px;
+	}
+}
+

@@ -1,0 +1,347 @@
+.vector{
+    position: relative;
+    margin: 0 auto;
+    img{
+    	margin: 0 auto;
+    }
+   
+}
+.vector-contact{
+	@include background-image('contact');
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 274px;
+	background-position:center center;
+	background-repeat:  no-repeat;
+	background-size: cover;
+}
+
+
+.vector-skill{
+	position: absolute;	
+	bottom: 0;
+	width: 40px;
+	height: 275px;
+	background: #20b9b7;
+	@include animation('skill-ai 0.1s ease-in-out infinite');
+}
+.vector-label{
+	position: absolute;
+	bottom: 313px;	
+	left: -93px;
+	font-family: 'lato-bold';
+	font-size: 16px;
+
+}
+.vector-skillbar{
+	position: absolute;
+	z-index: -9999;
+}
+.vector-ai{
+	display: inline-block;
+	width: auto;
+	margin-top: 125px;
+	img{
+    	width: 264px;
+    }
+	.vector-item{
+		@include background-image('ai2');
+		position: relative;
+		margin-right: -20px;
+		width: 600px;
+		height: 310px;
+		background-repeat:no-repeat; 
+		background-position: left top; 
+		background-size: 100% 100%;  		
+	}
+	.vector-skillbar{
+		
+		top: 266px;
+		left: 234px;
+
+	}	
+	.vector-label{
+		bottom: 279px;
+		left: 5px;
+	}
+}
+
+.vector-aiEquip{
+	@include background-image('ai-equip');
+	position: absolute;
+	top: 69px;
+	left: 1px; 	
+	width: 509px;
+	height: 107px;
+	background-repeat: no-repeat; 
+	background-position: left top;
+	background-size: cover; 
+	@include animation('ai-equip 6s ease-in 1s infinite');
+}
+
+
+
+.vector-cms{
+	img{
+		margin-top: 50px;
+		width: 225px;
+	}
+	.vector-cmsArm{
+		@include background-image('cms-arm');
+		position: absolute;
+		top: 93px;
+		right: 325px;
+		width: 136px;
+		height: 212px;
+		background-repeat: no-repeat ;
+		background-position: left top;
+		background-size: 135px; 
+		@include transform-origin(79% 91%);
+		@include rotate(0deg);
+		@include animation('js-arm 12s ease-in-out 1s infinite');
+	}		
+	.vector-item{
+		@include background-image('cms');
+		margin: 48px 77px 0 auto;
+		width: 300px;
+		height: 361px;
+		background-repeat: no-repeat;
+		background-position: left top;
+		background-size:  243px;; 
+	}
+	.vector-skillbar{
+		right: 0;	
+		margin-right: 65px;
+		.vector-label{
+			bottom: 278px;
+			left: 5px;
+		}		
+	}
+
+}
+
+
+.vector-js{
+	display: inline-block;
+	width: auto;
+	margin-top: 125px;
+	img{
+		width: 264px;
+	}
+	.vector-skill{
+		height: 211px;
+		background:#fbda3e;
+		-webkit-animation-name: skill-js;		
+		-moz-animation-name: skill-js;
+		-o-animation-name: skill-js;		
+		animation-name: skill-js;		
+
+	}	
+	.vector-skillbar{
+		top: 284px;
+		left: -21px;
+
+	}	
+	.vector-label{
+		bottom: 213px;
+		left: 5px;
+	}
+}
+
+.vector-me{
+    display: inline-block;
+    margin-right: 0;
+    img{
+    	margin-top:50px;
+    	width: 137px;
+    }
+    .vector-item{
+	    @include background-image('designer2');
+		width: 302px;
+		height: 452px;	
+		background-repeat: no-repeat; 
+		background-position: left top;
+		background-size: 100% 100%;    	
+    }
+    .vector-skillbar{
+    	left: 49px;
+    }
+    .vector-skill{
+    	left: -99px;
+		bottom: 32px;
+		height: 320px;
+    	background: #20b988;
+    	-webkit-animation-name: skill-me;
+    	-moz-animation-name: skill-me;
+    	-o-animation-name: skill-me;
+    	animation-name: skill-me;
+    }
+
+    .vector-label{
+    	bottom: 355px;
+    }
+}
+
+/*blink*/
+
+
+/* LEFT & RIGHT EYES STYLES */
+.vector-left-eye, .vector-right-eye {
+	position: absolute;
+	top: 118px;
+	z-index: 9999;
+	width: 9px;
+	height: 6px;
+	-webkit-transform: scale(1.1,1.2);
+	-moz-transform: scale(1.1,1.2);
+	transform: scale(1.1,1.2);
+}
+
+.vector-left-eye {
+	@include background-image('l-eye');
+	left: 125px;
+	background-repeat: no-repeat; 
+	background-position: left top;
+	background-size: 100% 100%;
+}
+.vector-right-eye {
+	@include background-image('r-eye');
+	left: 145px;
+	background-repeat: no-repeat; 
+	background-position: left top;
+	background-size: 100% 100%;
+}
+
+.vector-right-eye, .vector-left-eye {
+	@include animation('blink 2s linear 1s infinite');
+}
+
+//smoke
+
+.vector-smoke{
+	z-index: 9999;
+	height: 55px;
+	width: 31px;
+	display:block;
+	/* IE9 SVG, needs conditional override of 'filter' to 'none' */
+	background: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/Pgo8c3ZnIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDEgMSIgcHJlc2VydmVBc3BlY3RSYXRpbz0ibm9uZSI+CiAgPGxpbmVhckdyYWRpZW50IGlkPSJncmFkLXVjZ2ctZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPgogICAgPHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2ZmZmZmZiIgc3RvcC1vcGFjaXR5PSIwIi8+CiAgICA8c3RvcCBvZmZzZXQ9IjEwMCUiIHN0b3AtY29sb3I9IiNmZmZmZmYiIHN0b3Atb3BhY2l0eT0iMSIvPgogIDwvbGluZWFyR3JhZGllbnQ+CiAgPHJlY3QgeD0iMCIgeT0iMCIgd2lkdGg9IjEiIGhlaWdodD0iMSIgZmlsbD0idXJsKCNncmFkLXVjZ2ctZ2VuZXJhdGVkKSIgLz4KPC9zdmc+);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0)), color-stop(100%,rgba(255,255,255,1))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -moz-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(255,255,255,0) 0%,rgba(255,255,255,1) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=0 ); /* IE6-8 */
+    -webkit-mask: url('../images/smoke.svg');
+    mask: url('../images/smoke.svg');
+    -webkit-mask-size: 68px 48px;
+    mask-size: 68px 48px;
+    -webkit-mask-repeat:repeat-y;
+    mask-repeat:repeat-y;
+    
+    position:relative;
+	bottom: -211px;
+	right: -180px;
+    -webkit-animation:mask 1.3s 2s linear infinite backwards;
+       -moz-animation:mask 1.3s 2s linear infinite backwards;
+       -o-animation:mask 1.3s 2s linear infinite backwards;
+            animation:mask 1.3s 2s linear infinite backwards;
+}
+.no-svg .vector-smoke{
+	-webkit-mask: url('../images/smoke.png');
+    -moz-mask: url('../images/smoke.png');
+  
+}
+
+// RESPONSIVE STYLES
+
+
+@media(min-width: $screen-xs){
+	.vector-me{
+		img{
+			width: 180px;
+		}
+	}
+	.vector-ai{
+		margin-top: 178px;
+
+		img{
+	    	width: 380px;
+		}
+	}
+	.vector-js{
+		margin-top: 175px;
+		img{
+			width: 361px;
+		}		
+	}
+	.vector-cms{
+		width: 50%;
+		img{
+			margin-top: 85px;
+		}
+		.vector-item{
+			margin-top: 100px;
+		}	
+	}
+
+
+
+}
+@media(min-width: $screen-sm){
+	.vector-me{
+		margin-right: -120px;
+
+	}
+	.vector-ai,.vector-js{
+		width: 600px;
+		margin-right: -136px;
+	}
+	.vector-js{
+		img{
+			width: 432px;
+		}
+	}	
+}
+
+@media(min-width: $screen-md){
+	.vector-cms{
+		width: 85%;
+		.vector-item{
+			margin: 178px 150px 0 auto;
+		}
+		.vector-cmsArm{
+			right: 391px;
+		}		
+	}
+	.vector-ai,.vector-js{
+		margin-top: 300px;
+	}
+	.vector-me{
+		.vector-item{
+			width: 400px;
+			height: 616px;
+		}
+	}
+	.vector-smoke{
+		bottom: -289px;
+		right: -251px;
+		width: 60px;
+	}
+	.vector-right-eye,.vector-left-eye{
+		top: 143px;
+		width: 12px;
+		height: 6px;
+	}
+	.vector-right-eye{
+		left: 192px;
+	}
+	.vector-left-eye{
+		left: 164px;
+	}
+
+}
+
+
+
